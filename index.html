@@ -1,19 +1,55 @@
 <html>
     <head>
-
+        <!-- poppins font-->
+        <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+        <link rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+        <!--font aswome-->
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+        <!--importing stylesheet-->
+        <link rel="stylesheet" href="styles.css" />
     </head>
-    <title></title>
+    <title>Zomato Clone</title>
     <body>
-        <header class="hero__section">
-            <nav class="navbar">
-                <a href="#">Get the app</a>
-                <div>
-                    <a href="#">Invester Relation</a>
-                    <a href="#">Add Resturant</a>
-                    <a href="#">Log in</a>
-                    <a href="#">Sign up</a> 
-                </div>
-            </nav>
-        </header>
+        <section class="hero__section">
+            <header >
+                <nav class="navbar">
+                    <a href="#">Get the app</a>
+                    <div class="navbar__menu_container">
+                        <a href="#" class="link">Invester Relation</a>
+                        <a href="#" class="link">Add Resturant</a>
+                        <a href="#" class="link">Log in</a>
+                        <a href="#" class="link">Sign up</a> 
+                        <a href="#" class="user__icon"> 
+                        <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <div class="hero__section_container">
+                <img class="hero_section_logo" src="images/heroSectionLogo.png"
+                alt="zomato logo"/>
+                <h1 class="hero__section_tittle">Discover the best food and drinks in Delhi NCR</h1>
+                <div class="hero_section_input_container">
+                    <input
+                    class="input_container_location"
+                    type="text"
+                    placeholder="TWCA, 1, AShok Rd, Hanu"/>
+                    <input 
+                        class="input_container_search"
+                        type="text"
+                        placeholder="Search for a resturant, cuisine or a dish"
+                    />
+               </div>
+            </div>
+        </section>
     </body>
 </html>
