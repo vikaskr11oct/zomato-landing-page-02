@@ -192,29 +192,198 @@
     cursor: pointer;
 
 }
+.get_the_app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 251, 247);
+    padding: 3rem 6rem ;
+    width: 100%;
+}
+.get_the_app .semicontainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.get_the_app .semicontainer .left{
+    flex:2;
+}
+.get_the_app .semicontainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.get_the_app .semicontainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.get_the_app .semicontainer .right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.get_the_app .semicontainer .right p{
+    font-size: 0.8rem;
+}
+.semicontainer .right .radio_button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.semicontainer .right .radio_button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.radio_button_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
 
+.semicontainer .right .input_container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.input_container button,
+.input_container input{
+    padding: 10px 12px ;
+}
 
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
 
+}
 
+.input_container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}
+.right .download_app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.right .download_app_container h5{
+    font-weight: 400;
+    color: grey;
+}
 
+.right .download_app_container div{
+    display: flex;
+    gap: 1rem;
 
+}
+.right .download_app_container div img{
+    width: 35%;
+}
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.footer_section1 img{
+    width: 120px;
+}
+.section1 .section1__button_container{
+    display: flex;
+    gap: 1rem;
 
+}
+.section1__button_container button{
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    /*display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    cursor: pointer;
 
+}
 
+.navigation_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;/*or we can write repeat(5, 1fr);*/
+    width: 80%;
+    gap:1rem ;
+    margin: auto;
+    padding: 3rem 0;
+}
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.link_container h5{
+    font-weight: 400;
+    font-weight: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+.footer_link{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.footer_link:hover{
+    color: black;
+}
+.section_links_container{
+    display: flex;
+    gap: 0.5rem;
+}
+.section_links_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;justify-content: center;
+    align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}    
+.section_links_container button i{ 
+    color: #fff;
+    font-size: 13px;
+}
+.footer_section_logos{
+    width: 100%;
+}
+.disclamer{
+    width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 12px;
+    border-top: solid 1px gray;
+    padding-top: 2rem;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -237,14 +406,61 @@
     }
     .input_container_location , 
     .input_container_search{
-    padding: 15px;
-    border-radius: 10PX;
-    width: 90%;
+        padding: 15px;
+        border-radius: 10PX;
+        width: 90%;
     }
     .hero__section_container{
         height: calc(80vh - 60px);
     }
     .hero__section_tittle{
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .get_the_app .semicontainer .right{
+        flex: 1;
+    }
+    .get_the_app .semicontainer .left{
+        flex: 1;
+    }
+    .get_the_app .semicontainer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .get_the_app{
+        padding: 2rem;
+    }
+    
+    .get_the_app .semicontainer {
+        width: 90%;
+    }
+    
+}
+@media only screen and (max-width: 700px){
+    .get_the_app{
+        padding: 3rem 0;
+    }
+    
+    .get_the_app .semicontainer {
+        width: 80%;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: 1fr   ;
     }
 }
